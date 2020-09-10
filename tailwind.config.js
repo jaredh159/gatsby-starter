@@ -4,6 +4,7 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  purge: ['./src/**/*.tsx'],
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
