@@ -9,12 +9,13 @@
     "ts:check": "npx tsc --noEmit",
     "lint": "npx eslint . --ext ts,tsx",
     "build": "npx gatsby build",
+    "analyze": "ANALYZE_BUNDLE_SIZE=true npm run build",
     "format": "npx prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
     "serve": "npx gatsby serve",
     "upgrade-deps": "npx npm-check-updates -u && npm install"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
+    "classnames": "2.2.6",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0"
@@ -46,6 +47,7 @@
     "gatsby-plugin-react-helmet": "3.3.10",
     "gatsby-plugin-typescript": "2.4.19",
     "gatsby-source-filesystem": "2.3.29",
+    "gatsby-plugin-webpack-bundle-analyzer": "1.0.5",
     "prettier": "2.1.1",
     "tailwindcss": "1.8.6",
     "typescript": "4.0.2"

@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `A Website`,
+        short_name: `website`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -44,6 +44,15 @@ module.exports = {
           emitWarning: true,
           failOnError: false,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webpack-bundle-analyzer`,
+      options: {
+        production: true,
+        disable: !process.env.ANALYZE_BUNDLE_SIZE,
+        generateStatsFile: true,
+        analyzerMode: `static`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
